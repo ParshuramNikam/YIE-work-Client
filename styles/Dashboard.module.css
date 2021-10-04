@@ -1,0 +1,111 @@
+/* a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+} */
+
+.dashboardSection h1 {
+	text-align: center;
+	font-weight: 400;
+}
+
+.dashboardSection a{
+	color: inherit;
+	text-decoration: none;
+}
+
+.dashboardSection .center {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.dashboardSection button {
+	font-size: 1.5rem;
+	padding: 5px 15px;
+	margin: 10px 20px;
+	min-width: 10rem;
+	background: #00a5ec;
+	border: 1px solid #00a5ec;
+	border-radius: 3px;
+	color: white;
+	cursor: pointer;
+}
+.dashboardSection button:hover {
+	background: #00a5ec;
+}
+
+.dashboardSection .info {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	overflow: auto;
+	margin: 0.5rem;
+}
+
+.dashboardSection table {
+	border-collapse: collapse;
+	margin: 25px 0;
+	font-size: 0.9em;
+	border-radius: 5px 5px 0 0;
+	overflow: auto;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	margin: 1rem auto;
+
+}
+
+.dashboardSection .tableWrapper{
+	max-width: 95;
+	overflow-x: auto;
+}
+
+.dashboardSection table tbody tr td a {
+	color: rgb(0, 195, 255);
+}
+
+.dashboardSection table thead tr {
+	background-color: #1b1b1b;
+	color: #ffffff;
+	text-align: left;
+	font-weight: bold;
+	height: 3.5rem;
+}
+
+.dashboardSection table th,
+.dashboardSection table td {
+	padding: 12px 15px;
+	cursor: pointer;
+}
+
+.dashboardSection table tbody tr {
+	border-bottom: 1px solid #dddddd;
+}
+
+.dashboardSection table tbody tr:nth-of-type(even) {
+	background-color: #f3f3f3;
+}
+
+.dashboardSection table tbody tr:last-of-type {
+	border-bottom: 2.5px solid #1b1b1b;
+}
+
+.dashboardSection .studentJoinByIDBtn,
+.dashboardSection .teacherJoinByIDBtn {
+	float: right;
+}
+
+
+@media only screen  and (max-width: 650px) {
+	.dashboardSection .studentJoinByIDBtn,
+	.dashboardSection .teacherJoinByIDBtn {
+		float: none;
+		text-align: center;
+		width: 95%;
+	}
+	.dashboardSection .createNewSessionBtn{
+		width: 95%;
+	}
+	
+}
