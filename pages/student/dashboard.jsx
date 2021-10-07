@@ -6,7 +6,7 @@ const dashboard = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        fetch("http://localhost:8000/api/getlinksbyclass", {
+        fetch("http://localhost:8000/api/getlinks/class", {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ class: 1 }),
@@ -31,7 +31,7 @@ const dashboard = () => {
 
     return (
         <section>
-            <h2 className="text-5xl font-normal text-center leading-normal mt-0 mb-2 text-blueGray-800">
+            <h2 className="text-4xl font-normal text-center leading-normal mt-0 mb-2 text-blueGray-800">
                 Student Dashboard
             </h2>
             {isLoading ? <h3 style={{ textAlign: "center", fontWeight: 400 }}>Loading...</h3> :
